@@ -6,22 +6,23 @@ function App() {
     const {handlerDetailsOnClick} = useApp();
 
     return (
-        <div className="container">
-            <h1 className="title">Listado de Pacientes</h1>
-            <div className="columns">
-                <div className="column">
-                    <PatientCard name="Juan Perez" age={25} diagnostics="Fiebre"
-                                 onButtonClick={handlerDetailsOnClick}/>
-                </div>
-                <div className="column">
-                    <PatientCard name="Pedro Gomez" age={25}
-                                 diagnostics="Malestar general"
-                                 onButtonClick={handlerDetailsOnClick}/>
+            <div className="section">
+                <div className=" container">
+                    <h1 className="title">Listado de Pacientes</h1>
+                    <div className="columns">
+                        <div className="column">
+                            <PatientCard name="Juan Perez" age={25} diagnostics="Fiebre"
+                                         onButtonClick={handlerDetailsOnClick}/>
+                        </div>
+                        <div className="column">
+                            <PatientCard name="Pedro Gomez" age={25}
+                                         diagnostics="Malestar general"
+                                         onButtonClick={handlerDetailsOnClick}/>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-
-        </div>
     )
 }
 
